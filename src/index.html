@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio: John Doe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <input type="checkbox" id="hamburger-checkbox">
+            <li class="navbar__item"><a href="#about">About me</a></li>
+            <li class="navbar__item"><a href="#portfolio">Portfolio</a></li>
+            <li class="navbar__item"><a href="#contacts">Contacts</a></li>
+            <li class="navbar__item"><a href="#">Home</a></li>
+            <li class="navbar__item">
+                <label class="hamburger-icon" for="hamburger-checkbox">
+                    <div class="hamburger-icon__part hamburger-icon__part--top"></div>
+                    <div class="hamburger-icon__part hamburger-icon__part--mid"></div>
+                    <div class="hamburger-icon__part hamburger-icon__part--bot"></div>
+                </label>
+            </li>
+        </ul>
+    </nav>
+    <div class="header-title-container">
+        <div class="header-title-container__item left-spacer"></div>
+        <h1 class="header-title-container__item title">John Doe, <br>Front-end developer</h1>
+        <div class="header-title-container__item right-spacer"></div>
+    </div>
+</header>
+
+<section id="about">
+    <div class="about__container">
+        <div class="about-container__item--image-container">
+            <img class="about_image__background" src="images/laptop.jpg" alt="Laptop">
+            <img class="about-image__foreground" src="images/person.jpeg" alt="Portrait">
+        </div>
+        <div class="about-container__item--text-container">
+            <h2>About me</h2>
+            <p>
+                Hi, I'm John Doe. I've been a junior front-end developer for 5 months now.
+                For me, programming is not just a job, it's hobby.
+                I'm open to new knowledge, I like to study new technologies and apply them in practice.<br>
+                <b>Skills:</b> HTML, CSS, JavaScript.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-container__item">
+            <div class="portfolio-item__image"></div>
+            <p>Flashcards</p>
+            <button class="open-window" onclick="openProjectPopup('flashcards')">Open window</button>
+
+            <template id="flashcards" class="window">
+                <h2 class="popup-header">Flashcards</h2>
+                <p class="popup-description">
+                    Flashcards description.
+                </p>
+                <button class="close-window" onclick="closeProjectPopup()">Close</button>
+            </template>
+        </div>
+        <div class="portfolio-container__item">
+            <div class="portfolio-item__image"></div>
+            <p>Virtual Piano</p>
+            <button class="open-window" onclick="openProjectPopup('virtual-piano')">Open window</button>
+
+            <template id="virtual-piano" class="window">
+                <h2 class="popup-header">Virtual Piano</h2>
+                <p class="popup-description">
+                    Virtual piano description.
+                </p>
+                <button class="close-window" onclick="closeProjectPopup()">Close</button>
+            </template>
+        </div>
+    </div>
+</section>
+
+<section id="contacts">
+    <h2>Contacts</h2>
+    <ul>
+        <li>You can reach me at <a href="mailto:mailto:John.doe@example.com">john.doe@example.com</a></li>
+        <li>or by phone <a href="tel:+310627643210">+11 0987 654321</a></li>
+    </ul>
+    <ul class="contacts__social-networks">
+        <li><a href="https://github.com/johndoe">
+            <img class="contacts__icon" src="images/github.svg" alt="GitHub icon">
+        </a></li>
+        <li ><a href="https://facebook.com/john.doe">
+            <img class="contacts__icon" src="images/facebook.svg" alt="Facebook icon">
+        </a></li>
+        <li><a href="https://instagram.com/johndoe">
+            <img class="contacts__icon" src="images/instagram.svg" alt="Instagram icon">
+        </a></li>
+        <li><a href="https://twitter.com/johndoe">
+            <img class="contacts__icon" src="images/twitter.svg" alt="Twitter icon">
+        </a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>
+        <span id="footer__name">John Doe</span><br>
+        <span id="footer__year">2022</span>
+    </p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
