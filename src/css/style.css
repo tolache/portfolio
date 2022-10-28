@@ -2,11 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     /*** DEBUG ***/
     /*background: #000 !important;*/
     /*color: #0f0 !important;*/
     /*outline: solid #f00 1px !important;*/
+}
+
+h1,
+h2,
+nav ul > li {
+    font-family: 'Lato', sans-serif;
 }
 
 header {
